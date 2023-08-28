@@ -1,0 +1,112 @@
+            ***Crear un repositorio en Github***
+
+-Haz clic en el botón verde "New" (nuevo) que se encuentra en la página principal de GitHub.
+
+-Escribe el nombre que quieres darle a tu repositorio en el campo "Repository name" (nombre del repositorio).
+
+-Si deseas, puedes agregar una descripción en el campo "Description" (descripción).
+
+-Elige si deseas que tu repositorio sea público o privado.
+
+-Haz clic en el botón "Create repository" (crear repositorio).
+
+
+
+            ***Agregar el repositorio remoto como "origin"***
+
+-Para vincular tu repositorio local con el remoto, debes agregar el repositorio remoto como "origin".
+
+-Para hacerlo, sigue estos pasos:
+
+1. Abre la terminal o línea de comandos en la carpeta del proyecto que quieres vincular.
+
+2. Escribe el siguiente comando en la terminal:
+    git remote add origin <URL del repositorio remoto>
+
+EJEMPLO:
+    git remote add origin https://github.com/tu-usuario/tu-repositorio.git
+
+
+
+            ***Subir cambios al repositorio remoto***
+
+-Una vez que hayas hecho cambios en tu repositorio local, debes subirlos al repositorio remoto para mantenerlos sincronizados. Para hacerlo, sigue estos pasos:
+
+-Agrega los cambios a tu repositorio local usando el comando git add.
+
+-Crea un commit usando el comando git commit.
+
+-Sube los cambios a tu repositorio remoto usando el comando git push origin master.
+
+EJEMPLO:
+    git add .
+    git commit -m "agregado nuevo archivo"
+    git push origin main
+
+
+
+            ***Bajar cambios desde el repositorio remoto***
+
+-Al trabajar de manera colaborativa con otros usuarios, usualmente el repositorio de Github será actualizado con código nuevo que no tendremos en nuestro repositorio local.
+
+-Ya vimos que con el comando git push podemos enviar cambios locales hacia el repositorio de Github pero ¿Cómo podemos lograr el proceso inverso?
+
+-Para eso utilizaremos el comando git pull, con él podremos descargar todo el historial nuevo de una rama en específico y además la información sobre nuevas ramas creadas en el repositorio.
+
+EJEMPLO:
+    git pull origin master
+
+-descargará los cambios del historial de GIT del repositorio remoto y los fusionará con los cambios locales en tu máquina.
+
+-Si tienes varias ramas en tu repositorio remoto, debes especificar la rama que deseas descargar. Para hacerlo, reemplaza "master" en el comando anterior con el nombre de la rama que deseas descargar.
+
+-Es importante tener en cuenta que si has realizado cambios locales que entran en conflicto con los cambios del repositorio remoto, Git mostrará un mensaje de conflicto y te pedirá que los resuelvas antes de fusionar los cambios.
+
+-En resumen, descargar cambios en el historial de Git del repositorio remoto en tu máquina es un proceso simple que se puede realizar usando el comando git pull origin <nombre de la rama> en la terminal o línea de comandos.
+
+
+
+
+            ***Git Ignore***
+-Git tiene una herramienta imprescindible casi en cualquier proyecto, el archivo ".gitignore", que sirve para decirle a Git qué archivos o directorios completos debe ignorar y no subir al repositorio de código.
+
+-Su implementación es muy sencilla, por lo que no hay motivo para no usarlo en cualquier proyecto y para cualquier nivel de conocimientos de Git que tenga el desarrollador. Únicamente se necesita crear un archivo especificando qué elementos se deben ignorar y, a partir de entonces, realizar el resto del proceso para trabajo con Git de manera habitual.
+
+-En el .gitignore se especificarán todas las rutas y archivos que no se requieren y con ello, el proceso de control de versiones simplemente ignorará estos archivos.
+
+-Otro claro ejemplo de uso de gitignore son los archivos que crean los sistemas operativos automáticamente, archivos que muchas veces están ocultos y no los vemos, pero que existen. Si no evitas que Git los procese, estarán en tu proyecto como cualquier otro archivo de código y generalmente es algo que no quieres que ocurra.
+
+
+git rm -r --cached node_modules
+
+-Luego tendrás que hacer un commit para que esos cambios se apliquen al sistema de control de versiones.
+
+git commit -m 'Eliminada carpeta node_modules del repo'
+
+-A partir de ahora esa carpeta no se verá en tu repositorio y gracias a tu .gitignore tampoco se tendrá en cuenta en las siguientes operaciones que realices mediante Git.
+
+
+
+            ***Clonar el repositorio Git***
+
+-Para vincular tu repositorio local con el remoto, debes clonar el repositorio remoto en tu máquina. Para hacerlo, sigue estos pasos:
+
+-Copia la URL del repositorio remoto de GitHub.
+
+-Abre la terminal o línea de comandos en tu máquina y navega hasta la carpeta donde deseas clonar el repositorio.
+
+-Escribe el siguiente comando en la terminal:
+    git clone <URL del repositorio Remoto>
+
+EJEMPLO:
+    git clone https://github.com/tu-usuario/tu-repositorio.git
+
+
+
+
+
+
+
+            Proyecto de CODO a CODO 4.0:
+
+     https://github.com/AlessoLeon/Codo-a-Codo-4.0.git

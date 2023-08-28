@@ -1,0 +1,41 @@
+*Antes que nada, inmediatamente después de instalar Git, lo primero que deberías hacer es lanzar un par de comandos de configuración.
+
+>>git config global user.name "Tu nombre aquí"
+
+>>git config global user.email "tu_email_aquí@example.com"
+
+
+Nota: Cada proyecto lo tendrás en una carpeta distinta y será un repositorio independiente. Esta operación de inicialización de tu repositorio, por tanto, la tendrás que realizar una única vez para cada proyecto que quieras controlar sus versiones por medio de Git.
+
+Así pues, antes que nada (antes de enviar cualquier archivo al repositorio), creo el repositorio Git con el comando "git init".:
+
+>>git init   -----  ( Sirve para Inicializar Repositorio )
+
+Hacer un "COMMIT": Se le llama cuando mandas los ficheros a la area llamada (Zona de Index) que utiliza Git donde se van guardando los ficheros que posteriormente luego se van a hacer un commit.
+Cualquier archivo que quieras mandar a la zona de index lo haces con el comando "add". 
+
+>>git add nombre-del-fichero   -----  ( Sirve para mandar a la Zona Index los Ficheros )
+
+Una vez añadido podrías ver que realmente tienes ese fichero en el "staging area", mediante el comando "status".
+
+>>git status   -----  ( Sirve para chequear los "git add" que estan en la Zona Index ) 
+
+Verás que, entre las cosas que te aparecen como salida de ese comando, te dice que tienes tu fichero añadido como "new file". Además te dice que estos cambios están preparados para hacer commit.
+
+>>git commit -m "mensaje para el commit"   -----  ( Sirve para enviar los archivos del "Staging Area" a nuestro repositorio )
+
+El comando git tag es el impulsor principal de una etiqueta: creación, modificación y eliminación.
+
+>>git tag   -----  ( Sirve para "Crear, Modificar y Eliminar" ficheros )
+
+>>git push --tags   -----  ( 
+
+>>git push origin master --tags   -----  ( 
+
+Otro comando interesante en el tema de versionado es "show" que te permite ver cómo estaba el repositorio en cada estado que has etiquetado anteriormente, es decir, en cada versión.
+
+>>git show v0.0.2    -----  ( Sirve para ver el estado del las versiones y modificaciones pasadas basadas a la version que se apunta )
+
+
+
+
