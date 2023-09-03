@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;    
+}
+
+h1 {
+    text-align: center;
+} /* TITULO */
+
+#titulo-1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 45px;
+    color: rgb(138, 138, 207);
+} /* TITULO */
+
+ul {
+    font-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aqua;
+} /* NAVBAR */
+
+.barra-1 {
+    text-align: center;
+} /* NAVBAR */
+
+li {
+    background-color: brown;
+    margin: 2vh;
+    padding: 3vh;
+    display: inline-block;
+    border: solid blue 3px;
+} /* NAVBAR */
+
+a:hover { 
+    color: rgb(95, 204, 255);
+    font-size: 18px;
+}
+
+.texto_1 {
+    font-family: sans-serif;
+    font-size: large;
+    margin-top: 3vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
